@@ -1,0 +1,25 @@
+    <tbody>
+              {recipeDetail.analyzedInstructions.map((instruction) => (
+                <tr key={instruction.name}>
+                  <td className={styles.attribute}>
+                    {instruction.steps.join(", ")}
+                    name
+                  </td>
+
+                  {recipeDetail.analyzedInstructions.map((instruction) =>
+                    Object.values(instruction).join(", ")
+                  )}
+                  {/* <td>{JSON.stringify(instruction.steps)}</td> */}
+                  <td>
+                    {/* {JSON.parse(
+                      JSON.stringify(instruction.steps),
+                      instruction.steps,
+                      number,
+                      step
+                    )} */}
+                  </td>
+
+                  <td></td>
+                </tr>
+              ))}
+            </tbody>
